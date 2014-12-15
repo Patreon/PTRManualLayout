@@ -14,6 +14,5 @@ FOUNDATION_EXPORT double ManualLayoutVersionNumber;
 //! Project version string for ManualLayout.
 FOUNDATION_EXPORT const unsigned char ManualLayoutVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <ManualLayout/PublicHeader.h>
-
-
+#import <ManualLayout/MLLayout.h>
+#import <ManualLayout/MLRect.h>

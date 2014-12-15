@@ -10,6 +10,10 @@
 		25F1BFE31A393A20009FECB2 /* ManualLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F1BFE21A393A20009FECB2 /* ManualLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F1BFE91A393A20009FECB2 /* ManualLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F1BFDD1A393A20009FECB2 /* ManualLayout.framework */; };
 		25F1BFF01A393A20009FECB2 /* ManualLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1BFEF1A393A20009FECB2 /* ManualLayoutTests.m */; };
+		25F1BFFB1A393BD2009FECB2 /* MLLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F1BFF91A393BD2009FECB2 /* MLLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F1BFFC1A393BD2009FECB2 /* MLLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1BFFA1A393BD2009FECB2 /* MLLayout.m */; };
+		25F1BFFF1A393CBD009FECB2 /* MLRect.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F1BFFD1A393CBD009FECB2 /* MLRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F1C0001A393CBD009FECB2 /* MLRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1BFFE1A393CBD009FECB2 /* MLRect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +24,20 @@
 			remoteGlobalIDString = 25F1BFDC1A393A20009FECB2;
 			remoteInfo = ManualLayout;
 		};
+		25FF9EBC1A3F73D200183493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25FF9EB71A3F73D200183493 /* ManualLayoutExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25FF9E8E1A3F73D100183493;
+			remoteInfo = ManualLayoutExample;
+		};
+		25FF9EBE1A3F73D200183493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25FF9EB71A3F73D200183493 /* ManualLayoutExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25FF9EA71A3F73D100183493;
+			remoteInfo = ManualLayoutExampleTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +47,11 @@
 		25F1BFE81A393A20009FECB2 /* ManualLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManualLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F1BFEE1A393A20009FECB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F1BFEF1A393A20009FECB2 /* ManualLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManualLayoutTests.m; sourceTree = "<group>"; };
+		25F1BFF91A393BD2009FECB2 /* MLLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLayout.h; sourceTree = "<group>"; };
+		25F1BFFA1A393BD2009FECB2 /* MLLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLayout.m; sourceTree = "<group>"; };
+		25F1BFFD1A393CBD009FECB2 /* MLRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLRect.h; sourceTree = "<group>"; };
+		25F1BFFE1A393CBD009FECB2 /* MLRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLRect.m; sourceTree = "<group>"; };
+		25FF9EB71A3F73D200183493 /* ManualLayoutExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ManualLayoutExample.xcodeproj; path = ManualLayoutExample/ManualLayoutExample.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +76,14 @@
 		25F1BFD31A393A20009FECB2 = {
 			isa = PBXGroup;
 			children = (
+				25FF9EB71A3F73D200183493 /* ManualLayoutExample.xcodeproj */,
 				25F1BFDF1A393A20009FECB2 /* ManualLayout */,
 				25F1BFEC1A393A20009FECB2 /* ManualLayoutTests */,
 				25F1BFDE1A393A20009FECB2 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		25F1BFDE1A393A20009FECB2 /* Products */ = {
 			isa = PBXGroup;
@@ -71,8 +97,12 @@
 		25F1BFDF1A393A20009FECB2 /* ManualLayout */ = {
 			isa = PBXGroup;
 			children = (
-				25F1BFE21A393A20009FECB2 /* ManualLayout.h */,
 				25F1BFE01A393A20009FECB2 /* Supporting Files */,
+				25F1BFE21A393A20009FECB2 /* ManualLayout.h */,
+				25F1BFF91A393BD2009FECB2 /* MLLayout.h */,
+				25F1BFFA1A393BD2009FECB2 /* MLLayout.m */,
+				25F1BFFD1A393CBD009FECB2 /* MLRect.h */,
+				25F1BFFE1A393CBD009FECB2 /* MLRect.m */,
 			);
 			path = ManualLayout;
 			sourceTree = "<group>";
@@ -102,6 +132,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		25FF9EB81A3F73D200183493 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25FF9EBD1A3F73D200183493 /* ManualLayoutExample.app */,
+				25FF9EBF1A3F73D200183493 /* ManualLayoutExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -110,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				25F1BFE31A393A20009FECB2 /* ManualLayout.h in Headers */,
+				25F1BFFB1A393BD2009FECB2 /* MLLayout.h in Headers */,
+				25F1BFFF1A393CBD009FECB2 /* MLRect.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +199,7 @@
 		25F1BFD41A393A20009FECB2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ML;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Patreon;
 				TargetAttributes = {
@@ -179,6 +221,12 @@
 			mainGroup = 25F1BFD31A393A20009FECB2;
 			productRefGroup = 25F1BFDE1A393A20009FECB2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 25FF9EB81A3F73D200183493 /* Products */;
+					ProjectRef = 25FF9EB71A3F73D200183493 /* ManualLayoutExample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				25F1BFDC1A393A20009FECB2 /* ManualLayout */,
@@ -186,6 +234,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		25FF9EBD1A3F73D200183493 /* ManualLayoutExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ManualLayoutExample.app;
+			remoteRef = 25FF9EBC1A3F73D200183493 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25FF9EBF1A3F73D200183493 /* ManualLayoutExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ManualLayoutExampleTests.xctest;
+			remoteRef = 25FF9EBE1A3F73D200183493 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		25F1BFDB1A393A20009FECB2 /* Resources */ = {
@@ -209,6 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F1C0001A393CBD009FECB2 /* MLRect.m in Sources */,
+				25F1BFFC1A393BD2009FECB2 /* MLLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +461,7 @@
 				25F1BFF51A393A20009FECB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25F1BFF61A393A20009FECB2 /* Build configuration list for PBXNativeTarget "ManualLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +470,7 @@
 				25F1BFF81A393A20009FECB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
