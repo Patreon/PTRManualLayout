@@ -11,6 +11,10 @@
 
 @interface MLRect : NSObject
 
++ (MLRect *)rect;
+
+@property (nonatomic, readonly) CGRect CGRectValue;
+
 @property (nonatomic, assign) CGFloat x;
 @property (nonatomic, assign) CGFloat y;
 @property (nonatomic, assign) CGFloat width;
@@ -19,6 +23,8 @@
 @property (nonatomic, assign) CGFloat right;
 @property (nonatomic, assign) CGFloat top;
 @property (nonatomic, assign) CGFloat bottom;
+@property (nonatomic, assign) CGFloat centerX;
+@property (nonatomic, assign) CGFloat centerY;
 
 @property (nonatomic, assign) CGPoint topLeft;
 @property (nonatomic, assign) CGPoint topRight;
@@ -27,7 +33,5 @@
 @property (nonatomic, assign) CGPoint center;
 
 @property (nonatomic, assign) CGSize size;
-
-@property (nonatomic, readonly) CGRect CGRectValue;
 
 @end

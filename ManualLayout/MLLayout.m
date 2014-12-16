@@ -43,6 +43,10 @@
 }
 
 - (void)apply {
+  for (UIView *view in _map.keyEnumerator) {
+    CGRect rect = self[view].CGRectValue;
+    view.frame = rect;
+  }
 }
 
 @end
