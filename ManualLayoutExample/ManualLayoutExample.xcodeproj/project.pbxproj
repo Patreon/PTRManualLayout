@@ -342,6 +342,7 @@
 					"/Users/samo/Documents/Code/ManualLayout/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = ManualLayoutExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +357,7 @@
 					"/Users/samo/Documents/Code/ManualLayout/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = ManualLayoutExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
