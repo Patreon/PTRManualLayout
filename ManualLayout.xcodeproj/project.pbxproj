@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		258A7EF61A7C4B1300461D68 /* MLTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 258A7EF41A7C4B1300461D68 /* MLTemplate.h */; };
+		258A7EF71A7C4B1300461D68 /* MLTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A7EF51A7C4B1300461D68 /* MLTemplate.m */; };
 		25F1BFE31A393A20009FECB2 /* ManualLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F1BFE21A393A20009FECB2 /* ManualLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F1BFE91A393A20009FECB2 /* ManualLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F1BFDD1A393A20009FECB2 /* ManualLayout.framework */; };
 		25F1BFF01A393A20009FECB2 /* ManualLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F1BFEF1A393A20009FECB2 /* ManualLayoutTests.m */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		258A7EF41A7C4B1300461D68 /* MLTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTemplate.h; sourceTree = "<group>"; };
+		258A7EF51A7C4B1300461D68 /* MLTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTemplate.m; sourceTree = "<group>"; };
 		25F1BFDD1A393A20009FECB2 /* ManualLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ManualLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F1BFE11A393A20009FECB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F1BFE21A393A20009FECB2 /* ManualLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManualLayout.h; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				25F1BFFA1A393BD2009FECB2 /* MLLayout.m */,
 				25F1BFFD1A393CBD009FECB2 /* MLRect.h */,
 				25F1BFFE1A393CBD009FECB2 /* MLRect.m */,
+				258A7EF41A7C4B1300461D68 /* MLTemplate.h */,
+				258A7EF51A7C4B1300461D68 /* MLTemplate.m */,
 			);
 			path = ManualLayout;
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 				25F1BFE31A393A20009FECB2 /* ManualLayout.h in Headers */,
 				25F1BFFB1A393BD2009FECB2 /* MLLayout.h in Headers */,
 				25F1BFFF1A393CBD009FECB2 /* MLRect.h in Headers */,
+				258A7EF61A7C4B1300461D68 /* MLTemplate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25F1C0001A393CBD009FECB2 /* MLRect.m in Sources */,
+				258A7EF71A7C4B1300461D68 /* MLTemplate.m in Sources */,
 				25F1BFFC1A393BD2009FECB2 /* MLLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
