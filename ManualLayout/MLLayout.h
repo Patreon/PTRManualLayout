@@ -12,7 +12,10 @@
 
 @interface MLLayout : NSObject
 
+@property (nonatomic, strong) MLRect *bounds;
+
 + (instancetype)layout;
++ (instancetype)layoutWithBounds:(CGRect)bounds;
 
 - (MLRect *)objectForKeyedSubscript:(UIView *)key;
 - (void)setObject:(MLRect *)obj forKeyedSubscript:(UIView *)key;

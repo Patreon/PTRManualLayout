@@ -32,15 +32,15 @@
 }
 
 - (void)viewWillLayoutSubviews {
-  MLLayout *layout = [MLLayout layout];
+  MLLayout *layout = [MLLayout layoutWithBounds:CGRectMake(100, 100, 100, 100)];
 
   layout[_leftView].left = 20;
   layout[_leftView].right = 40;
   layout[_leftView].top = 50;
   layout[_leftView].height = 100;
 
-  layout[_rightView].topLeft = layout[_leftView].topRight;
-  layout[_rightView].size = layout[_leftView].size;
+  layout[_rightView].topLeft = layout.bounds.topLeft;
+  layout[_rightView].size = layout.bounds.size;
 
   [layout apply];
 }

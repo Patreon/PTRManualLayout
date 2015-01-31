@@ -18,10 +18,18 @@
   return [[MLLayout alloc] init];
 }
 
++ (instancetype)layoutWithBounds:(CGRect)bounds {
+  MLLayout *layout = [[MLLayout alloc] init];
+  layout.bounds.topLeft = bounds.origin;
+  layout.bounds.size = bounds.size;
+  return layout;
+}
+
 - (instancetype)init {
   if (self = [super init]) {
     _map = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsStrongMemory
                                  valueOptions:NSPointerFunctionsStrongMemory];
+    _bounds = [MLRect rect];
   }
 
   return self;
