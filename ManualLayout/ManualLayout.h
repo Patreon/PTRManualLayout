@@ -16,3 +16,4 @@ FOUNDATION_EXPORT const unsigned char ManualLayoutVersionString[];
 
 #import <ManualLayout/MLLayout.h>
 #import <ManualLayout/MLRect.h>
+#import <ManualLayout/MLTemplate.h>
