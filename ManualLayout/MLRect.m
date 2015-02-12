@@ -94,7 +94,7 @@ BIND_CONSTRAINT_POINT(bottomRight, setBottomRight, _xConstraint.b, _yConstraint.
 
 #define BIND_VALUE(var, getter, setter, constraint) \
   - (CGFloat)getter { \
-    if (_constraints & constraint) { \
+    if (_resolved || _constraints & constraint) { \
       return var; \
     } \
     assert(NO); \
@@ -104,6 +104,8 @@ BIND_CONSTRAINT_POINT(bottomRight, setBottomRight, _xConstraint.b, _yConstraint.
     if (!(_constraints & constraint)) { \
       _numConstraints++; \
       _constraints |= constraint; \
+    } else { \
+      _resolved = NO; \
     } \
     var = value; \
     if (!_resolved && _numConstraints == 2) { \
@@ -164,7 +166,7 @@ BIND_VALUE(_size, size, setSize, ValueConstraintSize)
     break;
   }
 
-  _constraints = ValueConstraintA | ValueConstraintB | ValueConstraintCenter | ValueConstraintSize;
+  _resolved = YES;
 }
 
 @end
