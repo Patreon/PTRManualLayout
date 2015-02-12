@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ManualLayout"
-  s.version      = "0.3.1"
+  s.version      = "0.3.2"
   s.summary      = "Easily layout your UIs in code"
   s.homepage     = "https://github.com/Patreon/ManualLayout"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
