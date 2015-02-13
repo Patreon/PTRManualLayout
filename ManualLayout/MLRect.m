@@ -51,6 +51,13 @@ typedef NS_ENUM (NSUInteger, ValueConstraint) {
   return [[MLRect alloc] init];
 }
 
++ (MLRect *)rectWithCGRect:(CGRect)rect {
+  MLRect *mlRect = [[MLRect alloc] init];
+  mlRect.topLeft = rect.origin;
+  mlRect.size = rect.size;
+  return mlRect;
+}
+
 - (instancetype)init {
   if (self = [super init]) {
     _xConstraint = [[Constraint alloc] init];

@@ -12,6 +12,7 @@
 @interface MLRect : NSObject
 
 + (MLRect *)rect;
++ (MLRect *)rectWithCGRect:(CGRect)rect;
 
 @property (nonatomic, readonly) CGRect CGRectValue;
 
