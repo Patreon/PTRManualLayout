@@ -18,6 +18,7 @@
     _map = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsStrongMemory
                                  valueOptions:NSPointerFunctionsStrongMemory];
     _views = [NSMutableDictionary dictionary];
+    _transform = CGAffineTransformIdentity;
   }
 
   return self;
