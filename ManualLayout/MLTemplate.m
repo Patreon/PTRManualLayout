@@ -56,7 +56,7 @@
 - (MLLayout *)layoutForViews:(NSDictionary *)viewMap {
   MLLayout *layout = [self layout];
 
-  for (NSString *key in _views.keyEnumerator) {
+  for (NSString *key in _map.keyEnumerator) {
     layout[viewMap[key]] = self[key];
   }
 
