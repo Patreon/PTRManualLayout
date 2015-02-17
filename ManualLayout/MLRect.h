@@ -14,7 +14,9 @@
 + (MLRect *)rect;
 + (MLRect *)rectWithCGRect:(CGRect)rect;
 
-@property (nonatomic, readonly) CGRect CGRectValue;
+@property (nonatomic, assign) CGRect frame;
+@property (nonatomic, assign) CGPoint center;
+@property (nonatomic, assign) CGSize size;
 
 @property (nonatomic, assign) CGFloat x;
 @property (nonatomic, assign) CGFloat y;
@@ -31,8 +33,5 @@
 @property (nonatomic, assign) CGPoint topRight;
 @property (nonatomic, assign) CGPoint bottomLeft;
 @property (nonatomic, assign) CGPoint bottomRight;
-@property (nonatomic, assign) CGPoint center;
-
-@property (nonatomic, assign) CGSize size;
 
 @end

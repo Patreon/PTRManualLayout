@@ -67,8 +67,31 @@ typedef NS_ENUM (NSUInteger, ValueConstraint) {
   return self;
 }
 
-- (CGRect)CGRectValue {
+- (CGRect)frame {
   return CGRectMake(_xConstraint.a, _yConstraint.a, _xConstraint.size, _yConstraint.size);
+}
+
+- (void)setFrame:(CGRect)frame {
+  self.topLeft = frame.origin;
+  self.size = frame.size;
+}
+
+- (CGPoint)center {
+  return CGPointMake(_xConstraint.center, _yConstraint.center);
+}
+
+- (void)setCenter:(CGPoint)center {
+  _xConstraint.center = center.x;
+  _yConstraint.center = center.y;
+}
+
+- (CGSize)size {
+  return CGSizeMake(_xConstraint.size, _yConstraint.size);
+}
+
+- (void)setSize:(CGSize)size {
+  _xConstraint.size = size.width;
+  _yConstraint.size = size.height;
 }
 
 BIND_CONSTRAINT_FLOAT(x, setX, _xConstraint.a)
@@ -87,15 +110,6 @@ BIND_CONSTRAINT_POINT(topLeft, setTopLeft, _xConstraint.a, _yConstraint.a)
 BIND_CONSTRAINT_POINT(topRight, setTopRight, _xConstraint.b, _yConstraint.a)
 BIND_CONSTRAINT_POINT(bottomLeft, setBottomLeft, _xConstraint.a, _yConstraint.b)
 BIND_CONSTRAINT_POINT(bottomRight, setBottomRight, _xConstraint.b, _yConstraint.b)
-
-- (CGSize)size {
-  return CGSizeMake(_xConstraint.size, _yConstraint.size);
-}
-
-- (void)setSize:(CGSize)size {
-  _xConstraint.size = size.width;
-  _yConstraint.size = size.height;
-}
 
 @end
 

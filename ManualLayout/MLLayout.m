@@ -60,7 +60,7 @@
 
 - (void)apply {
   for (UIView *view in _map.keyEnumerator) {
-    CGRect rect = self[view].CGRectValue;
+    CGRect rect = self[view].frame;
     view.frame = CGRectApplyAffineTransform(rect, _transform);
   }
 }
