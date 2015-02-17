@@ -30,6 +30,7 @@
     _map = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsStrongMemory
                                  valueOptions:NSPointerFunctionsStrongMemory];
     _bounds = [MLRect rect];
+    _transform = CGAffineTransformIdentity;
   }
 
   return self;
@@ -50,10 +51,17 @@
   [_map setObject:obj forKey:key];
 }
 
+- (void)translate:(CGPoint)distance {
+  CGAffineTransform transform = CGAffineTransformMakeTranslation(distance.x, distance.y);
+  for (MLRect *rect in _map) {
+    rect.topLeft = CGPointApplyAffineTransform(rect.topLeft, transform);
+  }
+}
+
 - (void)apply {
   for (UIView *view in _map.keyEnumerator) {
     CGRect rect = self[view].CGRectValue;
-    view.frame = rect;
+    view.frame = CGRectApplyAffineTransform(rect, _transform);
   }
 }
 

@@ -33,6 +33,7 @@
 
 - (void)viewWillLayoutSubviews {
   MLLayout *layout = [MLLayout layoutWithBounds:CGRectMake(100, 100, 100, 100)];
+  layout.transform = CGAffineTransformMakeTranslation(40, 100);
 
   layout[_leftView].left = 20;
   layout[_leftView].right = 40;

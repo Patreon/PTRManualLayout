@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		258A7EF61A7C4B1300461D68 /* MLTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 258A7EF41A7C4B1300461D68 /* MLTemplate.h */; };
+		258A7EF61A7C4B1300461D68 /* MLTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 258A7EF41A7C4B1300461D68 /* MLTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		258A7EF71A7C4B1300461D68 /* MLTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A7EF51A7C4B1300461D68 /* MLTemplate.m */; };
 		25F1BFE31A393A20009FECB2 /* ManualLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F1BFE21A393A20009FECB2 /* ManualLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F1BFE91A393A20009FECB2 /* ManualLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F1BFDD1A393A20009FECB2 /* ManualLayout.framework */; };

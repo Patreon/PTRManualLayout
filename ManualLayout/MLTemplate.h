@@ -12,6 +12,8 @@
 
 @interface MLTemplate : NSObject
 
+@property (nonatomic, assign) CGAffineTransform transform;
+
 - (MLRect *)objectForKeyedSubscript:(NSString *)key;
 - (void)setObject:(MLRect *)obj forKeyedSubscript:(NSString *)key;
 

@@ -13,6 +13,7 @@
 @interface MLLayout : NSObject
 
 @property (nonatomic, strong) MLRect *bounds;
+@property (nonatomic, assign) CGAffineTransform transform;
 
 + (instancetype)layout;
 + (instancetype)layoutWithBounds:(CGRect)bounds;

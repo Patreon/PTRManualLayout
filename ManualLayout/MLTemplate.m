@@ -44,6 +44,7 @@
 
 - (MLLayout *)layout {
   MLLayout *layout = [MLLayout layout];
+  layout.transform = _transform;
 
   for (NSString *key in _views.keyEnumerator) {
     layout[_views[key]] = self[key];
