@@ -94,6 +94,24 @@ typedef NS_ENUM (NSUInteger, ValueConstraint) {
   _yConstraint.size = size.height;
 }
 
+- (CGFloat)baseline {
+  if ([self.view respondsToSelector:@selector(font)]) {
+    UIFont *font = [self.view performSelector:@selector(font)];
+    return self.bottom + font.descender;
+  } else {
+    return self.bottom;
+  }
+}
+
+- (void)setBaseline:(CGFloat)baseline {
+  if ([self.view respondsToSelector:@selector(font)]) {
+    UIFont *font = [self.view performSelector:@selector(font)];
+    self.bottom = baseline - font.descender;
+  } else {
+    self.bottom = baseline;
+  }
+}
+
 BIND_CONSTRAINT_FLOAT(x, setX, _xConstraint.a)
 BIND_CONSTRAINT_FLOAT(left, setLeft, _xConstraint.a)
 BIND_CONSTRAINT_FLOAT(right, setRight, _xConstraint.b)

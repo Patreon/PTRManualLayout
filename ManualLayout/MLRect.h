@@ -29,9 +29,14 @@
 @property (nonatomic, assign) CGFloat centerX;
 @property (nonatomic, assign) CGFloat centerY;
 
+// uses self.view.font if defined, otherwise returns bottom
+@property (nonatomic, assign) CGFloat baseline;
+
 @property (nonatomic, assign) CGPoint topLeft;
 @property (nonatomic, assign) CGPoint topRight;
 @property (nonatomic, assign) CGPoint bottomLeft;
 @property (nonatomic, assign) CGPoint bottomRight;
+
+@property (nonatomic, weak) UIView *view;
 
 @end
