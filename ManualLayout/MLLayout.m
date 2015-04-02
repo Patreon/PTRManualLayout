@@ -10,6 +10,16 @@
 
 #import "MLRect.h"
 
+#ifndef CGFLOAT_CEIL
+#ifdef CGFLOAT_IS_DOUBLE
+#define CGFLOAT_CEIL(value) ceil(value)
+#define CGFLOAT_FLOOR(value) floor(value)
+#else
+#define CGFLOAT_CEIL(value) ceil(value)
+#define CGFLOAT_FLOOR(value) floorf(value)
+#endif
+#endif
+
 @implementation MLLayout {
   NSMapTable *_map;
 }
