@@ -41,6 +41,7 @@
 
   if (!rect) {
     rect = [[MLRect alloc] init];
+    rect.view = key;
     [_map setObject:rect forKey:key];
   }
 
