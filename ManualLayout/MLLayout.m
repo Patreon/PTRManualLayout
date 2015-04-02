@@ -60,9 +60,15 @@
 }
 
 - (void)apply {
+  CGFloat scale = [UIScreen mainScreen].scale;
   for (UIView *view in _map.keyEnumerator) {
     CGRect rect = self[view].frame;
-    view.frame = CGRectApplyAffineTransform(rect, _transform);
+    rect = CGRectApplyAffineTransform(rect, _transform);
+    rect.origin.x = CGFLOAT_FLOOR(rect.origin.x * scale) / scale;
+    rect.origin.y = CGFLOAT_FLOOR(rect.origin.y * scale) / scale;
+    rect.size.width = CGFLOAT_CEIL(rect.size.width * scale) / scale;
+    rect.size.height = CGFLOAT_CEIL(rect.size.height * scale) / scale;
+    view.frame = rect;
   }
 }
 
