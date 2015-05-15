@@ -62,6 +62,14 @@
   [_map setObject:obj forKey:key];
 }
 
+- (CGRect)containingRect {
+  CGRect rect = CGRectZero;
+  for (MLRect *mlrect in _map.objectEnumerator) {
+    rect = CGRectUnion(rect, mlrect.frame);
+  }
+  return rect;
+}
+
 - (void)translate:(CGPoint)distance {
   CGAffineTransform transform = CGAffineTransformMakeTranslation(distance.x, distance.y);
   for (MLRect *rect in _map) {

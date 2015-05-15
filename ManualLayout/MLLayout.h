@@ -21,6 +21,8 @@
 - (MLRect *)objectForKeyedSubscript:(UIView *)key;
 - (void)setObject:(MLRect *)obj forKeyedSubscript:(UIView *)key;
 
+- (CGRect)containingRect;
+
 - (void)apply;
 
 @end
