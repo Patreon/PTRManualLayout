@@ -7,6 +7,7 @@
 //
 
 #import "MLRect.h"
+#import <UIKit/UIFont.h>
 
 #define BIND_CONSTRAINT_FLOAT(getter, setter, constraint) \
   - (CGFloat)getter { \
@@ -97,7 +98,7 @@ typedef NS_ENUM (NSUInteger, ValueConstraint) {
 - (CGFloat)baseline {
   if ([self.view respondsToSelector:@selector(font)]) {
     UIFont *font = [self.view performSelector:@selector(font)];
-    return self.bottom + font.descender;
+    return self.top + font.ascender;
   } else {
     return self.bottom;
   }
@@ -106,7 +107,7 @@ typedef NS_ENUM (NSUInteger, ValueConstraint) {
 - (void)setBaseline:(CGFloat)baseline {
   if ([self.view respondsToSelector:@selector(font)]) {
     UIFont *font = [self.view performSelector:@selector(font)];
-    self.bottom = baseline - font.descender;
+    self.top = baseline - font.ascender;
   } else {
     self.bottom = baseline;
   }

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIView.h>
 
 @interface MLRect : NSObject
 
@@ -29,7 +30,7 @@
 @property (nonatomic, assign) CGFloat centerX;
 @property (nonatomic, assign) CGFloat centerY;
 
-// uses self.view.font if defined, otherwise returns bottom
+// the baseline of the first line of text
 @property (nonatomic, assign) CGFloat baseline;
 
 @property (nonatomic, assign) CGPoint topLeft;
