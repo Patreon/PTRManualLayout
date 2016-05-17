@@ -1,9 +1,9 @@
 # ManualLayout
 
-[![CI Status](http://img.shields.io/travis/Patreon/PTRManualLayout.svg?style=flat)](https://travis-ci.org/Patreon/PTRManualLayout)
-[![Version](https://img.shields.io/cocoapods/v/PTRManualLayout.svg?style=flat)](http://cocoapods.org/pods/PTRManualLayout)
-[![License](https://img.shields.io/cocoapods/l/PTRManualLayout.svg?style=flat)](http://cocoapods.org/pods/PTRManualLayout)
-[![Platform](https://img.shields.io/cocoapods/p/PTRManualLayout.svg?style=flat)](http://cocoapods.org/pods/PTRManualLayout)
+[![CI Status](http://img.shields.io/travis/Patreon/ManualLayout.svg?style=flat)](https://travis-ci.org/Patreon/ManualLayout)
+[![Version](https://img.shields.io/cocoapods/v/ManualLayout.svg?style=flat)](http://cocoapods.org/pods/ManualLayout)
+[![License](https://img.shields.io/cocoapods/l/ManualLayout.svg?style=flat)](http://cocoapods.org/pods/ManualLayout)
+[![Platform](https://img.shields.io/cocoapods/p/ManualLayout.svg?style=flat)](http://cocoapods.org/pods/ManualLayout)
 
 Layout your UIs in code. No tricks, no funny business, just dead simple layout.
 

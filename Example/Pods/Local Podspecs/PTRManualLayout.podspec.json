@@ -3,7 +3,7 @@
   "version": "0.7.0",
   "summary": "Easily layout your UIs in code",
   "description": "PTRManualLayout provides a set of utilities to easily lay out your views in code",
-  "homepage": "https://github.com/Patreon/PTRManualLayout",
+  "homepage": "https://github.com/Patreon/ManualLayout",
   "license": {
     "type": "Apache 2.0",
     "file": "LICENSE"
@@ -13,7 +13,7 @@
     "David Kettler": "david@patreon.com"
   },
   "source": {
-    "git": "https://github.com/Patreon/PTRManualLayout.git",
+    "git": "https://github.com/Patreon/ManualLayout.git",
     "tag": "0.6.1"
   },
   "platforms": {
