@@ -4,14 +4,14 @@
 
 language: objective-c
 osx_image: xcode7.3
-# cache: cocoapods
-# podfile: Example/Podfile
+cache: cocoapods
+podfile: Example/Podfile
 before_install:
-# - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+- gem install cocoapods --no-rdoc --no-ri --no-document --quiet
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-# - pod repo update
-# - pod install --project-directory=Example
-# - pod env
+- pod repo update
+- pod install --project-directory=Example
+- pod env
 script:
-- set -o pipefail && xcodebuild test -verbose -project ManualLayout.xcodeproj -scheme ManualLayout -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' | xcpretty
+- set -o pipefail && xcodebuild test -verbose -workspace Example/ManualLayout.xcworkspace -scheme ManualLayout-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' | xcpretty
 - pod lib lint --quick
