@@ -1,36 +1,32 @@
 # ManualLayout
 
+[![CI Status](http://img.shields.io/travis/Patreon/ManualLayout.svg?style=flat)](https://travis-ci.org/Patreon/ManualLayout)
+[![Version](https://img.shields.io/cocoapods/v/ManualLayout.svg?style=flat)](http://cocoapods.org/pods/ManualLayout)
+[![License](https://img.shields.io/cocoapods/l/ManualLayout.svg?style=flat)](http://cocoapods.org/pods/ManualLayout)
+[![Platform](https://img.shields.io/cocoapods/p/ManualLayout.svg?style=flat)](http://cocoapods.org/pods/ManualLayout)
+
 Layout your UIs in code. No tricks, no funny business, just dead simple layout.
 
-#Table of Contents
 
-1. [Installation](#installation)
+## Table of Contents
+
+1. [Example](#example)
+2. [Installation](#installation)
 2. [Usage](#usage)
-3. [Example](#example)
-
-#Installation
-
-###[Cocoapods](https://github.com/CocoaPods/CocoaPods)
-
-Add the following line in your `Podfile`:
-
-```
-pod 'ManualLayout', :git => 'git@github.com:Patreon/ManualLayout.git'
-```
-
-and run `pod install`
 
 
-#Usage
+## Usage
 
 1. `#import <ManualLayout/ManualLayout.h>`
 2. Build your layout, typically in `layoutSubviews`, by mapping your views to `MLRects` (see [Example](#example) below)
 3. `[layout apply]` to make all your dreams come true
 
 
-#Example
+## Example
 
-```objc
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+```
 #import "ExampleView.h"
 #import <ManualLayout/ManualLayout.h>
 
@@ -86,3 +82,20 @@ and run `pod install`
 
 @end
 ```
+
+## Installation
+
+ManualLayout is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "ManualLayout"
+```
+
+## Author
+
+David Kettler, david@patreon.com
+
+## License
+
+ManualLayout is available under the Apache 2.0 license. See the LICENSE file for more info.

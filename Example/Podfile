@@ -1,0 +1,13 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'ManualLayout_Example' do
+  pod 'ManualLayout', :path => '../'
+
+  target 'ManualLayout_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+  end
+end
