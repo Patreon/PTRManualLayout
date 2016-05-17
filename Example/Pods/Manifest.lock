@@ -1,22 +1,22 @@
 PODS:
   - Expecta (1.0.5)
-  - ManualLayout (0.6.1)
+  - PTRManualLayout (0.6.1)
   - Specta (1.0.5)
 
 DEPENDENCIES:
   - Expecta
-  - ManualLayout (from `../`)
+  - PTRManualLayout (from `../`)
   - Specta
 
 EXTERNAL SOURCES:
-  ManualLayout:
+  PTRManualLayout:
     :path: "../"
 
 SPEC CHECKSUMS:
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  ManualLayout: b73b9f189afd70eea2c5648a90542a5bd9513534
+  PTRManualLayout: 6c3b41f5cc2f234830b8ba14729ed72d010f57b4
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
-PODFILE CHECKSUM: 2b7df79a3ee9898e777034255c0311d7bf851068
+PODFILE CHECKSUM: d9f48e8590e1db6da11f3359c456305f3a808e6d
 
 COCOAPODS: 1.0.0

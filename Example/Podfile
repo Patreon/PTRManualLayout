@@ -1,10 +1,10 @@
-platform :ios, '8.0'
+platform :ios, '7.1'
 use_frameworks!
 
-target 'ManualLayout_Example' do
-  pod 'ManualLayout', :path => '../'
+target 'PTRManualLayout_Example' do
+  pod 'PTRManualLayout', :path => '../'
 
-  target 'ManualLayout_Tests' do
+  target 'PTRManualLayout_Tests' do
     inherit! :search_paths
 
     pod 'Specta'
