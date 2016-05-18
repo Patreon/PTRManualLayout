@@ -110,12 +110,12 @@ PTRManualLayout is available under the Apache 2.0 license. See the LICENSE file 
 
 ## Contributing
 
-1. `git clone git@github.com:Patreon/cartographer.git`
-2. `cd cartographer`
+1. `git clone git@github.com:Patreon/PTRManualLayout.git`
+2. `cd PTRManualLayout`
 3. `git checkout -b my-meaningful-improvements`
 4. Write beautiful code that improves the project, creating or modifying tests to prove correctness.
 5. Commit said code and tests in a well-organized way.
-6. Confirm tests pass with `./run_tests.sh` (you may need to `./setup_environments.sh` first)
+6. Confirm tests pass by opening `Example/PTRRLMManualLayout.xcworkspace` and running tests with `Cmd+U` (you may need to `cd Example && pod install` first)
 7. `git push origin my-meaningful-improvements`
 8. Open a pull request (`hub pull-request`, if you have [`hub`](https://github.com/github/hub))
 9. Have a chill discussion with the community about how to best integrate your improvements into mainline deployments
