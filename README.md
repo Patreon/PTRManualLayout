@@ -10,9 +10,12 @@ Layout your UIs in code. No tricks, no funny business, just dead simple layout.
 
 ## Table of Contents
 
-1. [Example](#example)
-2. [Installation](#installation)
-3. [Usage](#usage)
+1. [Usage](#usage)
+2. [Example](#example)
+3. [Installation](#installation)
+4. [Author](#author)
+5. [License](#license)
+6. [Contributing](#contributing)
 
 
 ## Usage
@@ -83,6 +86,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 @end
 ```
 
+
 ## Installation
 
 PTRManualLayout is available through [CocoaPods](http://cocoapods.org). To install
@@ -92,11 +96,26 @@ it, simply add the following line to your Podfile:
 pod "PTRManualLayout"
 ```
 
+
 ## Author
 
 Sam Morrison, samo@patreon.com
 David Kettler, david@patreon.com
 
+
 ## License
 
 PTRManualLayout is available under the Apache 2.0 license. See the LICENSE file for more info.
+
+
+## Contributing
+
+1. `git clone git@github.com:Patreon/cartographer.git`
+2. `cd cartographer`
+3. `git checkout -b my-meaningful-improvements`
+4. Write beautiful code that improves the project, creating or modifying tests to prove correctness.
+5. Commit said code and tests in a well-organized way.
+6. Confirm tests pass with `./run_tests.sh` (you may need to `./setup_environments.sh` first)
+7. `git push origin my-meaningful-improvements`
+8. Open a pull request (`hub pull-request`, if you have [`hub`](https://github.com/github/hub))
+9. Have a chill discussion with the community about how to best integrate your improvements into mainline deployments
