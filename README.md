@@ -1,6 +1,6 @@
-# ManualLayout
+# PTRManualLayout
 
-[![CI Status](http://img.shields.io/travis/Patreon/ManualLayout.svg?style=flat)](https://travis-ci.org/Patreon/ManualLayout)
+[![CI Status](https://circleci.com/gh/Patreon/PTRManualLayout.svg?style=shield&circle-token=d9487fbc01b40a5095cc5ad6e07a410a78860606)](https://circleci.com/gh/Patreon/PTRManualLayout)
 [![Version](https://img.shields.io/cocoapods/v/PTRManualLayout.svg?style=flat)](http://cocoapods.org/pods/PTRManualLayout)
 [![License](https://img.shields.io/cocoapods/l/PTRManualLayout.svg?style=flat)](http://cocoapods.org/pods/PTRManualLayout)
 [![Platform](https://img.shields.io/cocoapods/p/PTRManualLayout.svg?style=flat)](http://cocoapods.org/pods/PTRManualLayout)
@@ -85,7 +85,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-PTRMLLayout is available through [CocoaPods](http://cocoapods.org). To install
+PTRManualLayout is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -94,8 +94,8 @@ pod "PTRManualLayout"
 
 ## Author
 
-David Kettler, david@patreon.com
 Sam Morrison, samo@patreon.com
+David Kettler, david@patreon.com
 
 ## License
 
