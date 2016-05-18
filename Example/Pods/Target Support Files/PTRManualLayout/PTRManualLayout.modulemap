@@ -1,0 +1,6 @@
+framework module PTRManualLayout {
+  umbrella header "PTRManualLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

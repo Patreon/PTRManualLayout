@@ -1,6 +1,6 @@
-# ManualLayout
+# PTRManualLayout
 
-[![CI Status](https://circleci.com/gh/Patreon/ManualLayout.svg?style=shield&circle-token=d9487fbc01b40a5095cc5ad6e07a410a78860606)](https://circleci.com/gh/Patreon/ManualLayout)
+[![CI Status](https://circleci.com/gh/Patreon/PTRManualLayout.svg?style=shield&circle-token=d9487fbc01b40a5095cc5ad6e07a410a78860606)](https://circleci.com/gh/Patreon/PTRManualLayout)
 [![Version](https://img.shields.io/cocoapods/v/PTRManualLayout.svg?style=flat)](http://cocoapods.org/pods/PTRManualLayout)
 [![License](https://img.shields.io/cocoapods/l/PTRManualLayout.svg?style=flat)](http://cocoapods.org/pods/PTRManualLayout)
 [![Platform](https://img.shields.io/cocoapods/p/PTRManualLayout.svg?style=flat)](http://cocoapods.org/pods/PTRManualLayout)
@@ -12,13 +12,13 @@ Layout your UIs in code. No tricks, no funny business, just dead simple layout.
 
 1. [Example](#example)
 2. [Installation](#installation)
-2. [Usage](#usage)
+3. [Usage](#usage)
 
 
 ## Usage
 
-1. `#import <ManualLayout/ManualLayout.h>`
-2. Build your layout, typically in `layoutSubviews`, by mapping your views to `MLRects` (see [Example](#example) below)
+1. `#import <PTRManualLayout/PTRManualLayout.h>`
+2. Build your layout, typically in `layoutSubviews`, by mapping your views to `PTRMLRects` (see [Example](#example) below)
 3. `[layout apply]` to make all your dreams come true
 
 
@@ -28,7 +28,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ```
 #import "ExampleView.h"
-#import <ManualLayout/ManualLayout.h>
+#import <PTRManualLayout/PTRManualLayout.h>
 
 @interface ExampleView ()
 @property (nonatomic, strong) UILabel *prompt;
@@ -41,7 +41,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
   self = [super initWithFrame:frame];
   if (self) {
     self.prompt = [[UILabel alloc] initWithFrame:CGRectZero];
-    self.prompt.text = @"ManualLayout lets you lay out your views with ease";
+    self.prompt.text = @"PTRManualLayout lets you lay out your views with ease";
     [self addSubview:self.prompt];
 
     self.button = [[UIButton alloc] initWithFrame:CGRectZero];
@@ -61,11 +61,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
   return [[self buildLayout:size] containingRect].size;
 }
 
-- (MLLayout *)buildLayout:(CGSize)size {
-  MLLayout *layout = [MLLayout layoutWithBounds:(CGRect){CGPointZero, size}];
+- (PTRMLLayout *)buildLayout:(CGSize)size {
+  PTRMLLayout *layout = [MLLayout layoutWithBounds:(CGRect){CGPointZero, size}];
 
   CGFloat padding = 10;
-  MLRect *insetRect = [MLRect rectWithCGRect:CGRectInset(layout.bounds.frame, padding, padding)];
+  PTRMLLayout *insetRect = [PTRMLLayout rectWithCGRect:CGRectInset(layout.bounds.frame, padding, padding)];
 
   layout[self.prompt].size = [self.prompt sizeThatFits:insetRect.size];
   layout[self.prompt].centerX = insetRect.centerX;
@@ -85,17 +85,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-ManualLayout is available through [CocoaPods](http://cocoapods.org). To install
+PTRManualLayout is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "ManualLayout"
+pod "PTRManualLayout"
 ```
 
 ## Author
 
+Sam Morrison, samo@patreon.com
 David Kettler, david@patreon.com
 
 ## License
 
-ManualLayout is available under the Apache 2.0 license. See the LICENSE file for more info.
+PTRManualLayout is available under the Apache 2.0 license. See the LICENSE file for more info.
