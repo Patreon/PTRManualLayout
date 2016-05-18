@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name           = "PTRManualLayout"
-    s.version        = "0.7.0"
+    s.version        = "0.8.0"
     s.summary        = "Easily layout your UIs in code"
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 PTRManualLayout provides a set of utilities to easily lay out your views in code
                        DESC
 
-  s.homepage         = "https://github.com/Patreon/ManualLayout"
+  s.homepage         = "https://github.com/Patreon/PTRManualLayout"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { "Sam Morrison" => "samo@patreon.com", "David Kettler" => "david@patreon.com" }
-  s.source           = { :git => "https://github.com/Patreon/ManualLayout.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Patreon/PTRManualLayout.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.1'
